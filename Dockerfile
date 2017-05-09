@@ -17,8 +17,8 @@ FROM golang:1.8-alpine
 VOLUME /config
 EXPOSE 6060 6061
 
-ADD .   /go/src/github.com/coreos/clair/
-WORKDIR /go/src/github.com/coreos/clair/
+ADD .   /go/src/github.com/damelo/clair/
+WORKDIR /go/src/github.com/damelo/clair/
 
 RUN apk add --no-cache git bzr rpm xz && \
     go install -v github.com/damelo/clair/cmd/clair && \
