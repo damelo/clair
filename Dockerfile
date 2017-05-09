@@ -21,7 +21,7 @@ ADD .   /go/src/github.com/coreos/clair/
 WORKDIR /go/src/github.com/coreos/clair/
 
 RUN apk add --no-cache git bzr rpm xz && \
-    go install -v github.com/coreos/clair/cmd/clair && \
+    go install -v github.com/damelo/clair/cmd/clair && \
     mv /go/bin/clair /clair && \
     rm -rf /go /usr/local/go
 
